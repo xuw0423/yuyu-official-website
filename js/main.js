@@ -27,7 +27,7 @@ function renderHeader(active) {
   <header class="site-header" id="site-header">
     <div class="container site-header__inner">
       <a href="index.html" class="brand">
-        <span class="brand__mark" aria-hidden="true"><span></span><span></span><span></span></span>
+        <img class="brand__logo" src="public/logo.jpg" alt="中科昱宇" width="48" height="42" />
         <span class="brand__text">
           <strong>昱宇科技</strong>
           <small>音响 · 灯光 · LED</small>
@@ -51,6 +51,7 @@ function renderFooter() {
   <footer class="site-footer">
     <div class="container site-footer__grid">
       <div class="site-footer__brand">
+        <img class="site-footer__logo" src="public/logo.jpg" alt="中科昱宇" width="120" height="105" />
         <h3>昱宇科技</h3>
         <p>专业音响灯光 LED 屏设备租赁服务</p>
         <p class="site-footer__tagline">以设备稳定为根基，以技术专业为核心，以服务可靠为承诺。</p>
@@ -67,6 +68,10 @@ function renderFooter() {
           <li>邮箱：<a href="mailto:${SITE.email}">${SITE.email}</a></li>
           <li>地址：${SITE.address}</li>
         </ul>
+        <div class="site-footer__qr">
+          <img src="public/wechat-qr.jpg" alt="微信二维码" width="112" height="112" loading="lazy" />
+          <span>微信扫码咨询</span>
+        </div>
       </div>
     </div>
     <div class="site-footer__bar">

@@ -232,24 +232,13 @@ ul {
   flex-shrink: 0;
 }
 
-.brand__mark {
-  width: 36px;
-  height: 36px;
-  border: 1.5px solid rgba(240, 160, 75, 0.85);
+.brand__logo {
+  width: 48px;
+  height: 42px;
+  object-fit: contain;
   border-radius: 6px;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 3px;
-  padding: 7px;
-}
-
-.brand__mark span {
-  background: var(--accent);
-  border-radius: 1px;
-}
-
-.brand__mark span:nth-child(2) {
-  background: var(--teal);
+  background: #fff;
+  flex-shrink: 0;
 }
 
 .brand__text {
@@ -362,6 +351,15 @@ ul {
   letter-spacing: 0.04em;
 }
 
+.site-footer__logo {
+  width: 120px;
+  height: auto;
+  display: block;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+  background: #fff;
+}
+
 .site-footer__brand p {
   margin-top: 0.35rem;
 }
@@ -369,6 +367,28 @@ ul {
 .site-footer__tagline {
   margin-top: 1rem !important;
   max-width: 28ch;
+  color: rgba(244, 246, 250, 0.55);
+}
+
+.site-footer__qr {
+  margin-top: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.55rem;
+}
+
+.site-footer__qr img {
+  width: 112px;
+  height: 112px;
+  object-fit: contain;
+  border-radius: 8px;
+  background: #fff;
+  padding: 6px;
+}
+
+.site-footer__qr span {
+  font-size: 0.85rem;
   color: rgba(244, 246, 250, 0.55);
 }
 
@@ -1272,6 +1292,29 @@ tr:last-child td {
   color: var(--brand);
   font-size: 1.05rem;
   font-weight: 600;
+}
+
+.contact-wechat {
+  margin-top: 1.75rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.7rem;
+}
+
+.contact-wechat img {
+  width: 160px;
+  height: 160px;
+  object-fit: contain;
+  border-radius: var(--radius);
+  border: 1px solid var(--line);
+  background: #fff;
+  padding: 8px;
+}
+
+.contact-wechat p {
+  color: var(--muted);
+  font-size: 0.92rem;
 }
 
 .contact-map {

@@ -1,0 +1,8 @@
+services:
+  web:
+    build: .
+    image: yuyu-official-website:latest
+    container_name: yuyu-website
+    ports:
+      - "80:80"
+    restart: unless-stopped

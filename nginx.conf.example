@@ -1,0 +1,35 @@
+# 昱宇科技官网 Nginx 示例配置
+# 用法：复制到 /etc/nginx/conf.d/yuyu.conf 后修改 server_name 与 root
+
+server {
+    listen 80;
+    server_name www.example.com example.com;
+
+    root /var/www/yuyu-official-website;
+    index index.html;
+
+    charset utf-8;
+
+    # 访问日志（可按需调整路径）
+    access_log /var/log/nginx/yuyu.access.log;
+    error_log  /var/log/nginx/yuyu.error.log;
+
+    location / {
+        try_files $uri $uri/ =404;
+    }
+
+    location ~* \.(css|js|svg|png|jpg|jpeg|gif|webp|ico|mp4|woff2?)$ {
+        expires 7d;
+        add_header Cache-Control "public";
+        try_files $uri =404;
+    }
+
+    # 禁止访问隐藏文件
+    location ~ /\. {
+        deny all;
+    }
+
+    gzip on;
+    gzip_types text/plain text/css application/javascript application/json image/svg+xml;
+    gzip_min_length 1024;
+}

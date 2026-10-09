@@ -30,7 +30,7 @@ function renderHeader(active) {
         <img class="brand__logo" src="public/logo.jpg" alt="中科昱宇" width="48" height="42" />
         <span class="brand__text">
           <strong>昱宇科技</strong>
-          <small>音响 · 灯光 · LED</small>
+          <small>音响 · 灯光 · LED屏</small>
         </span>
       </a>
       <nav class="nav" id="site-nav" aria-label="主导航">

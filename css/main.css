@@ -763,7 +763,7 @@ ul {
   padding: 3.5rem;
   background:
     linear-gradient(110deg, rgba(15, 24, 41, 0.92), rgba(15, 24, 41, 0.72)),
-    url("https://images.unsplash.com/photo-1470229722913-7c0e2dbbafd3?auto=format&fit=crop&w=1600&q=80")
+    url("public/images/photo-1470229722913-7c0e2dbbafd3.jpg")
       center / cover;
   color: #fff;
 }

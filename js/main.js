@@ -143,7 +143,7 @@ function initHero() {
       subtitle:
         '十年行业深耕，为演唱会、年会、发布会、庆典活动提供全套视听设备与现场技术保障',
       image:
-        'https://images.unsplash.com/photo-1470229722913-7c0e2dbbafd3?auto=format&fit=crop&w=1920&q=80',
+        'public/images/photo-1470229722913-7c0e2dbbafd3.jpg',
       primary: { label: '立即咨询', href: 'contact.html' },
       secondary: { label: '获取方案', href: 'contact.html' },
     },
@@ -151,7 +151,7 @@ function initHero() {
       title: '专业舞美设备租赁，让每一场活动声光俱佳',
       subtitle: '自有 3000+ 台套设备库存，技术团队全程现场值守',
       image:
-        'https://images.unsplash.com/photo-1501281668745-f7f57925c3b4?auto=format&fit=crop&w=1920&q=80',
+        'public/images/photo-1501281668745-f7f57925c3b4.jpg',
       primary: { label: '查看案例', href: 'cases.html' },
       secondary: { label: '联系我们', href: 'contact.html' },
     },
@@ -159,7 +159,7 @@ function initHero() {
       title: '大小活动均可承接，按需定制灵活报价',
       subtitle: '从小型会议到万人演出，一站式设备 + 搭建 + 技术全包',
       image:
-        'https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&w=1920&q=80',
+        'public/images/photo-1492684223066-81342ee5ff30.jpg',
       primary: { label: '在线询价', href: 'contact.html' },
     },
   ]

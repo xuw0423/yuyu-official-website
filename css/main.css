@@ -883,6 +883,25 @@ ul {
   border-radius: var(--radius);
 }
 
+/* 灯光图 1860×814。列宽至少 560px，才能在不变形的情况下露出右边。 */
+.equipment-block__head--lights {
+  grid-template-columns: minmax(0, 1fr) minmax(560px, 1.15fr);
+  align-items: center;
+}
+
+.equipment-block__head--lights > * {
+  min-width: 0;
+}
+
+.equipment-block__head--lights img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1860 / 814;
+  object-fit: contain;
+  object-position: center;
+  background: transparent;
+}
+
 .table-wrap {
   overflow-x: auto;
   background: var(--bg-elevated);
@@ -959,13 +978,27 @@ tr:last-child td {
   gap: 1rem;
 }
 
-.equipment-led__media img,
+.equipment-led__media {
+  min-width: 0;
+}
+
 .equipment-led__media video {
   width: 100%;
   height: 240px;
   object-fit: cover;
   border-radius: var(--radius);
   background: var(--brand-deep);
+}
+
+/* LED 图 1491×960。高度跟着宽度走，避免 240px 把上下裁掉。 */
+.equipment-led__media img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1491 / 960;
+  object-fit: contain;
+  object-position: center;
+  border-radius: var(--radius);
+  background: #fff;
 }
 
 /* Cases */
